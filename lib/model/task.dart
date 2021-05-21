@@ -1,4 +1,5 @@
 import 'package:Konnex/index.dart';
+import 'package:Konnex/model/abstract_task.dart';
 import 'individual.dart';
 
 Map<String, int> mapTaskType = {
@@ -9,7 +10,7 @@ Map<String, int> mapTaskType = {
   'Integration': 5
 };
 
-class Task {
+class Task extends AbstractTask {
   int id, priority, level, eta;
   String desc, type;
   bool assigned;

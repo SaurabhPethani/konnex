@@ -29,6 +29,16 @@ class _AssignmentScreenState extends State<AssignmentScreen> {
         shadowColor: AppTheme.appBarShadowColor,
         centerTitle: true,
         title: Text('Assignment', style: AppTheme.appBarStyle),
+        // actions: [
+        //   Padding(
+        //     padding: const EdgeInsets.symmetric(vertical: 2.0, horizontal: 14),
+        //     child: GestureDetector(
+        //         child: Icon(
+        //       Icons.search,
+        //       color: AppTheme.secondaryColor,
+        //     )),
+        //   )
+        // ],
       ),
       body: SingleChildScrollView(
         child: ChangeNotifierProvider.value(

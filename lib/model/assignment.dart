@@ -1,6 +1,7 @@
 import 'dart:convert';
+import 'abstract_task.dart';
 
-class Assignment {
+class Assignment extends AbstractTask {
   int id;
   double progress, timeTaken;
   String name;

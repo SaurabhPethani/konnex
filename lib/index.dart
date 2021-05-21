@@ -38,5 +38,6 @@ export 'widgets/assignment_tile.dart';
 export 'widgets/akshar_tile.dart';
 export 'widgets/progress_bar.dart';
 export 'widgets/task_assign_tile.dart';
+export 'widgets/CupertinoAppBar.dart';
 
 export 'service/sqlite_service.dart';

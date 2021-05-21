@@ -34,7 +34,18 @@ class _AksharScreenState extends State<AksharScreen> {
               backgroundColor: AppTheme.appBarColor,
               shadowColor: AppTheme.appBarShadowColor,
               centerTitle: true,
-              title: Text('Akshars', style: AppTheme.appBarStyle),
+              title: Text('Team', style: AppTheme.appBarStyle),
+              // actions: [
+              //   Padding(
+              //     padding:
+              //         const EdgeInsets.symmetric(vertical: 2.0, horizontal: 14),
+              //     child: GestureDetector(
+              //         child: Icon(
+              //       Icons.search,
+              //       color: AppTheme.secondaryColor,
+              //     )),
+              //   )
+              // ],
             ),
             body: SingleChildScrollView(
               child: Column(

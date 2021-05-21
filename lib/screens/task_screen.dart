@@ -35,15 +35,17 @@ class _TaskScreenState extends State<TaskScreen> {
               shadowColor: AppTheme.appBarShadowColor,
               centerTitle: true,
               title: Text('Tasks', style: AppTheme.appBarStyle),
-              actions: [
-                // GestureDetector(
-                //   onTap: null,
-                //   child: Icon(
-                //     Icons.filter,
-                //     color: AppTheme.primaryColor,
-                //   ),
-                // )
-              ],
+              // actions: [
+              //   Padding(
+              //     padding:
+              //         const EdgeInsets.symmetric(vertical: 2.0, horizontal: 14),
+              //     child: GestureDetector(
+              //         child: Icon(
+              //       Icons.search,
+              //       color: AppTheme.secondaryColor,
+              //     )),
+              //   )
+              // ],
             ),
             body: SingleChildScrollView(
               child: Column(

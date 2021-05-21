@@ -7,7 +7,7 @@
          FlutterApplication and put your custom class here. -->
     <application
         android:name="io.flutter.app.FlutterApplication"
-        android:label="Akshar Support"
+        
         android:icon="@mipmap/akshar_support">
         <activity
             android:name=".MainActivity"
