@@ -10,7 +10,7 @@ class AksharScreen extends StatefulWidget {
 
 class _AksharScreenState extends State<AksharScreen> {
   List<AksharTile> getTiles(List<Individual> ind) {
-    List<AksharTile> akTile = new List<AksharTile>();
+    List<AksharTile> akTile = [];
     ind?.forEach((indi) {
       akTile.add(AksharTile(individual: indi));
     });

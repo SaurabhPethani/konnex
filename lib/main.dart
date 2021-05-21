@@ -14,7 +14,6 @@ void main() async {
       androidKey: "245H95VR5NQNF2WN4FJ9",
       iosKey: "QM8ZKFBYJC5YF6HQPQK",
       enableLog: true);
-  await FlurryAnalytics.setUserId('3');
   await FlurryAnalytics.logEvent('App_Started');
   runApp(MyApp());
 }
@@ -29,7 +28,7 @@ Future<void> getData() async {
       await locator<SqliteDatabaseService>().getAssignedTask();
   List<Individual> indi =
       await locator<SqliteDatabaseService>().getIndividual();
-  List<int> aasii = List<int>();
+  List<int> aasii = [];
   double active = 0,
       pending = 0,
       pendingHrs = 0,
@@ -66,7 +65,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Akshar Support',
+      title: 'Konnex Support',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         visualDensity: VisualDensity.adaptivePlatformDensity,
@@ -110,19 +109,19 @@ class _MyHomePageState extends State<MyHomePage> {
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(
             icon: Icon(Icons.dashboard),
-            title: Text('Dashboard'),
+            label: 'Dashboard',
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.home),
-            title: Text('Tasks'),
+            label: 'Tasks',
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.assignment),
-            title: Text('Assignment'),
+            label: 'Assignment',
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.people),
-            title: Text('Akshar'),
+            label: 'Akshar',
           ),
         ],
         currentIndex: _selectedIndex,

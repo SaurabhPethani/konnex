@@ -9,4 +9,5 @@ void setupModelLocator() async {
   locator.registerSingleton(SqliteDatabaseService());
 }
 
+// TODO: to implement Services for backend interaction with Firebase or AWS
 void setupServiceLocator() async {}
