@@ -1,5 +1,4 @@
-import 'package:Scrum/index.dart';
-
+import 'package:Konnex/index.dart';
 import 'assignment.dart';
 
 class AssignmentModel with ChangeNotifier {

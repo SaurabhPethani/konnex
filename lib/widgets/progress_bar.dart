@@ -1,4 +1,4 @@
-import 'package:Scrum/index.dart';
+import 'package:Konnex/index.dart';
 
 class Rating extends StatelessWidget {
   double rating = 1.0;

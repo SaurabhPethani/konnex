@@ -1,4 +1,4 @@
-import 'package:Scrum/index.dart';
+import 'package:Konnex/index.dart';
 
 class ProfileScreen extends StatefulWidget {
   Individual individual;
@@ -36,7 +36,8 @@ class _ProfileScreenState extends State<ProfileScreen> {
         actions: [
           GestureDetector(
               onTap: () {
-                locator<SqliteDatabaseService>().undoTask(widget.individual.name);
+                locator<SqliteDatabaseService>()
+                    .undoTask(widget.individual.name);
                 locator<IndividualModel>().deleteIndividual(widget.individual);
                 locator<SqliteDatabaseService>()
                     .deleteIndividual(widget.individual.name);

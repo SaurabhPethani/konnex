@@ -1,4 +1,4 @@
-import 'package:Scrum/index.dart';
+import 'package:Konnex/index.dart';
 import 'individual.dart';
 
 Map<String, int> mapTaskType = {

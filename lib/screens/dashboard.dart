@@ -1,5 +1,5 @@
-import 'package:Scrum/index.dart';
-import 'package:Scrum/main.dart';
+import 'package:Konnex/index.dart';
+import 'package:Konnex/main.dart';
 
 class Dashboard extends StatefulWidget {
   Map<String, double> tasks = new Map<String, double>();

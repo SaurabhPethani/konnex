@@ -1,4 +1,4 @@
-import 'package:Scrum/index.dart';
+import 'package:Konnex/index.dart';
 import 'package:intl/intl.dart';
 
 class ProgressTaskScreen extends StatefulWidget {
