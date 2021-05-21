@@ -1,6 +1,6 @@
-# Scrum
+# konnex
 
-A new Flutter project.
+Flutter project to improve usability of product 
 
 ## Getting Started
 
