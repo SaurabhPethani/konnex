@@ -10,6 +10,7 @@ class GlobalSearch extends StatefulWidget {
 class Global_SearchState extends State<GlobalSearch> {
   List<IconData> task = [Icons.pending, Icons.done, Icons.work_outline_rounded];
   List tasks = [];
+  List assignment=[];
   int segmentedControlValue = 0;
 
   Widget segmentedControl(BuildContext context) {
@@ -24,7 +25,7 @@ class Global_SearchState extends State<GlobalSearch> {
               thumbColor: Colors.white,
               backgroundColor: Colors.grey[300],
               children: const <int, Widget>{
-                0: Text('Peding'),
+                0: Text('Pending'),
                 1: Text('Completed'),
                 2: Text('In-Progress')
               },
@@ -36,7 +37,7 @@ class Global_SearchState extends State<GlobalSearch> {
                         .where((tak) => !tak.assigned)
                         .toList();
                   } else if (value == 1) {
-                    tasks = locator<AssignmentModel>()
+                    assignment = locator<AssignmentModel>()
                         .assignments
                         .where((tak) => tak.progress == 5.0)
                         .toList();
@@ -50,9 +51,13 @@ class Global_SearchState extends State<GlobalSearch> {
                 });
               }),
         ),
-        ...tasks
+        segmentedControlValue == 1 ? 
+        ...assignment
             .map((e) =>
-                e == Task ? TaskTile(task: e) : AssignmentTile(assign: e))
+                AssignmentTile(assign: e) )
+            .toList() : 
+        ...tasks
+            .map((e) => TaskTile(task: e))
             .toList()
       ],
     );
